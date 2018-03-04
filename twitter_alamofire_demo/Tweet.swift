@@ -20,6 +20,8 @@ class Tweet {
     var user: User // Contains name, screenname, etc. of tweet author
     var createdAtString: String // Display date
     
+    var retweetedByUser: User?
+    
     // MARK: - Create initializer with dictionary
     init(dictionary: [String: Any]) {
         id = dictionary["id"] as! Int64
